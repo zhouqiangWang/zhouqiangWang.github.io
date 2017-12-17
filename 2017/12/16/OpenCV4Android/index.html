@@ -19,15 +19,15 @@ SDK
 SDK
 2. ObjectDetector (人脸检测)
 创建分类器 org.opencv.objdetect.CascadeClassifierdemo apk里使用了 OpenCV库中(sdk/etc目录)带的几个特征分类器作了演示人脸检测 - lbpcascade_frontalface.xml人眼检测 - haarcascade_eye.xm">
-<meta property="og:image" content="http://yoursite.com/2017/12/16/OpenCV4Android/OpenCV4Android.png">
-<meta property="og:updated_time" content="2017-12-17T02:02:02.257Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79gy1fmjjp02tgnj30pr0egabt.jpg">
+<meta property="og:updated_time" content="2017-12-17T02:15:58.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenCV4Android">
 <meta name="twitter:description" content="1. 文档OpenCV4Android SDK
 SDK
 2. ObjectDetector (人脸检测)
 创建分类器 org.opencv.objdetect.CascadeClassifierdemo apk里使用了 OpenCV库中(sdk/etc目录)带的几个特征分类器作了演示人脸检测 - lbpcascade_frontalface.xml人眼检测 - haarcascade_eye.xm">
-<meta name="twitter:image" content="http://yoursite.com/2017/12/16/OpenCV4Android/OpenCV4Android.png">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006tNc79gy1fmjjp02tgnj30pr0egabt.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Zhouqiang" type="application/atom+xml">
   
@@ -217,7 +217,8 @@ SDK
 <li>创建 org.opencv.android.JavaCameraView 自定义控件，在<code>public Mat onCameraFrame(CvCameraViewFrame inputFrame)</code> 回调中，使用CascadeClassifier.detectMultiScale() 获取检测到的人脸数据MatOfRect，这边有几个参数，比基本的人类检测更严格一些：<br>minNeighbors = 10，即检测到10个重叠的脸轮廓才认为人脸存在，flags 这边只使用了lbpcascade因此次标识位设置 0x1111，人脸识别目前OpenCV库中带的有lbpcascade(local binary pattern)和haarcascade 两大类，其中lbp的特点是运算速度快，便于在嵌入式等平台运行，可以尝试使用gabor，或者使用二者结合的特征（如LGBP,LGXP等，需算法同学协助）。</li>
 <li>人脸识别功能 在<code>onCameraFrame</code>获取到人脸数据之后，还会置灰(作者写置灰的目的是为了方式色泽和明暗度对识别有影响，这边我们可根据我们后台具体算法动态处理)，保存用作比对。在比较图片特征值的时候，作者本地实现了一个建议的图片特征值比较方式，大约流程 参考 <a href="http://blog.csdn.net/nicebooks/article/details/8175002" target="_blank" rel="external">http://blog.csdn.net/nicebooks/article/details/8175002</a> 新项目，主要采用线上对比的方式，本地如果性能允许，也可以做一次类似的简单匹配，提高识别效率。  </li>
 </ol>
-<h5 id="类图如下"><a href="#类图如下" class="headerlink" title="类图如下"></a>类图如下</h5><img src="/2017/12/16/OpenCV4Android/OpenCV4Android.png" alt="基本结构" title="基本结构"></div>
+<h5 id="类图如下"><a href="#类图如下" class="headerlink" title="类图如下"></a>类图如下</h5><p><img src="https://ws1.sinaimg.cn/large/006tNc79gy1fmjjp02tgnj30pr0egabt.jpg" alt=""></p>
+</div>
 
             
 <nav class="post-nav flex-row">
